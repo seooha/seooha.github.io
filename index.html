@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>실종아동정보</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>    
+    <div class="wrap">
+        <h1>UI/UX <span>KWONSEOHA</span></h1> 
+        <!-- <span> 태그 사용 : 반투명하게 보여줌 -->
+
+        <ul class="auto">
+            <li class="btnStart"><i class="fas fa-play"></i></li>
+            <li class="btnStop"><i class="fas fa-pause"></i></li>
+        </ul>
+
+        <div class="swiper-wrapper">
+            <!-- div class의 개수 조정 시 슬라이드 개수 결정됨-->
+            <!--슬라이드 시작-->
+            <div class="swiper-slide"> 
+                <div class="inner">
+                    <table width="100%">
+                        <tr>
+                            <td class="child_title">이름</td>
+                            <td align="center">김땡땡</td>
+                        </tr>
+                        <tr>
+                            <td width="30%" class="child_title">추정 사진</td>
+                            <td width="70%" align="center"><img src="./img/hello.jpg" width="350"></td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">당시 나이</td>
+                            <td align="center">19세</td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">현재 나이</td>
+                            <td align="center">25세</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--슬라이드 종료-->
+            <div class="swiper-slide"> 
+                <div class="inner">
+                    <table width="100%">
+                        <tr>
+                            <td class="child_title">이름</td>
+                            <td align="center">김땡땡</td>
+                        </tr>
+                        <tr>
+                            <td width="30%" class="child_title">추정 사진</td>
+                            <td width="70%" align="center"><img src="./img/hello.jpg" width="350"></td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">당시 나이</td>
+                            <td align="center">19세</td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">현재 나이</td>
+                            <td align="center">25세</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="swiper-slide"> 
+                <div class="inner">
+                    <table width="100%">
+                        <tr>
+                            <td class="child_title">이름</td>
+                            <td align="center">김땡땡</td>
+                        </tr>
+                        <tr>
+                            <td width="30%" class="child_title">추정 사진</td>
+                            <td width="70%" align="center"><img src="./img/hello.jpg" width="350"></td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">당시 나이</td>
+                            <td align="center">19세</td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">현재 나이</td>
+                            <td align="center">25세</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="swiper-slide"> 
+                <div class="inner">
+                    <table width="100%">
+                        <tr>
+                            <td class="child_title">이름</td>
+                            <td align="center">김땡땡</td>
+                        </tr>
+                        <tr>
+                            <td width="30%" class="child_title">추정 사진</td>
+                            <td width="70%" align="center"><img src="./img/hello.jpg" width="350"></td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">당시 나이</td>
+                            <td align="center">19세</td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">현재 나이</td>
+                            <td align="center">25세</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="swiper-slide"> 
+                <div class="inner">
+                    <table width="100%">
+                        <tr>
+                            <td class="child_title">이름</td>
+                            <td align="center">김땡땡</td>
+                        </tr>
+                        <tr>
+                            <td width="30%" class="child_title">추정 사진</td>
+                            <td width="70%" align="center"><img src="./img/hello.jpg" width="350"></td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">당시 나이</td>
+                            <td align="center">19세</td>
+                        </tr>
+                        <tr>
+                            <td class="child_title">현재 나이</td>
+                            <td align="center">25세</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> 
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-pagination"></div> 
+        <!--현재 페이지 번호 확인-->
+    </div>
+
+    <script>
+        const swiper = new Swiper('.wrap', { //프레임의 요소명
+            spaceBetween: 0,
+            // Optional parameters
+            direction: 'horizontal', // 스와이프 방향
+            loop: false, // 순환 여부
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination', // 페이지 메뉴 요소명
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next', // 다음 버튼 요소명
+                prevEl: '.swiper-button-prev', // 이전 버튼 요소명
+            },
+            spaceBetween: 50, // 패널 사이 간격를 50px로 설정
+            slidesPerView: "auto",
+            grabCursor: true,
+            centeredSlides: true,
+            speed: 1000,
+            effect: "coverflow", // 이펙트 효과 지정
+            coverflowEffect: {
+                rotate: 50,
+                stretch: -100,
+                depth: 400,
+                modifier: 1,
+                slideShadows: false,
+            }
+        });
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* 화면 초기화 */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+.child_title {
+    text-align: center;
+    font-weight: bold;
+  
+}  
+
+ul,ol,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.wrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #405582, #37bfbf)
+}
+.wrap h1 {
+    font-weight: normal;
+    font-size: 24px;
+    font-family: "orbitron";
+    color: #fff;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+}
+.wrap h1 span {
+    opacity: 0.8;
+}
+.wrap .auto {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    z-index: 20;
+}
+.wrap .auto li {
+    float:left;
+    margin-right: 20px;
+    cursor:pointer;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+.wrap .auto li:hover { /* 마우스 호버 시 진해지며 1.6배 확대 */
+    opacity: 1;
+    transform: scale(1.6);
+}
+.wrap .swiper-wrapper {
+    width:100%;
+    height: 100%;
+}
+.wrap .swiper-wrapper .swiper-slide {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 50%;
+    margin-top: -230px;
+}
+.wrap .swiper-wrapper .swiper-slide .inner {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    opacity: 0.4;
+    transition: 1s;
+}
+.wrap .swiper-button-prev {
+    left: auto;
+    right: 100px;
+    top: auto;
+    bottom: 50px;
+    filter: grayscale(100%) brightness(3);
+    transform: scale(0.5);
+}
+.wrap .swiper-button-next {
+    left: auto;
+    right: 60px;
+    top: auto;
+    bottom: 50px;
+    filter: grayscale(100%) brightness(3);
+    transform: scale(0.5);
+}
+.wrap .swiper-wrapper .swiper-slide-active .inner {
+    opacity: 1;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+}
+.wrap .swiper-wrapper .swiper-slide .inner::before,
+.wrap .swiper-wrapper .swiper-slide .inner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    background: #fff;
+}
+.wrap .swiper-wrapper .swiper-slide-prev .inner,
+.wrap .swiper-wrapper .swiper-slide-next .inner {
+    opacity: 0.7;
+}
+@keyframes ani {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    1% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
