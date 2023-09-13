@@ -1,26 +1,35 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html> <!-- 문서 형식 -->
 <html lang="ko">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>실종아동정보</title>
+<!-- 메타데이터 정의 (웹 브라우저에 직접 노출 안됨) -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 최신 렌더링 엔진으로 지정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- 기기의 화면 너비에 맞추기 -->
+    <title>실종아동정보</title>
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">	
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
-<body>    
+<body>
+<!-- 웹 브라우저에 직접 노출되는 내용 작성 -->
     <div class="wrap">
-        <h1>UI/UX <span>KWONSEOHA</span></h1> 
+        <h1><span>KWONSEOHA</span></h1> 
         <!-- <span> 태그 사용 : 반투명하게 보여줌 -->
-
-        <ul class="auto">
+        <div class="img to site">
+            <a href="https://open.kakao.com/o/sfCyvzFf">
+                <div class="img-container">
+                    <img src="./img/question.jpg">
+                </div>
+            </a>
+        </div>
+        <!-- <ul class="auto">
             <li class="btnStart"><i class="fas fa-play"></i></li>
             <li class="btnStop"><i class="fas fa-pause"></i></li>
-        </ul>
+        </ul> -->
 
         <div class="swiper-wrapper">
             <!-- div class의 개수 조정 시 슬라이드 개수 결정됨-->
@@ -175,8 +184,7 @@
                 modifier: 1,
                 slideShadows: false,
             }
-        });
-    
+        }); 
     </script>
 </body>
 </html>
