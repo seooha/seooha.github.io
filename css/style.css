@@ -31,13 +31,13 @@ a {
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
-    background: linear-gradient(45deg, #405582, #37bfbf)
+    background: #C9D6FF
 }
 .wrap h1 {
     font-weight: normal;
     font-size: 24px;
     font-family: "orbitron";
-    color: #fff;
+    color: #4E5D8F;
     letter-spacing: 1px;
     position: absolute;
     left: 50px;
@@ -74,7 +74,7 @@ a {
     height: 500px;
     position: relative;
     top: 50%;
-    margin-top: -230px;
+    margin-top: -350px;
 }
 .wrap .swiper-wrapper .swiper-slide .inner {
     width: 100%;
@@ -134,3 +134,11 @@ a {
         transform: scale(1.4);
     }
 }
+.img-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* right: 50px;
+    top:70px */                                                                     
+}
+
